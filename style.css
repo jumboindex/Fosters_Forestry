@@ -5,9 +5,11 @@
 
 body {
     background-color: green;
+    
 }
 
 /* fonts */
+
 h1, h2 {
     font-family: 'Cabin', sans-serif;
 }
@@ -34,7 +36,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-flow: row nowrap;
+    flex-flow: row nowrap; 
 
 }
 
@@ -43,19 +45,24 @@ nav img {
     height: 5rem;
     width: 5rem ;
     border-radius: 100px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
+    margin: 5px;
 }
 
 nav h1 {
-    text-align: center;
     color: whitesmoke;
     font-size: 2rem;
     
 }
 
-nav li {
+nav ul {
+    display:inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    white-space: nowrap;
+}
+
+
+nav ul li {
     display: block;
     float: right;
 
@@ -66,8 +73,15 @@ nav li a {
      text-decoration: none;
      padding: 14px 16px;
      color: whitesmoke;
-     
+}
 
+nav a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+main {
+    margin-top: 75px;
 }
 
 .menu {
@@ -83,8 +97,8 @@ nav li a {
    .menu {
        display: inline;
        margin: 5px;
-       height: 3rem;
-       width: 3rem;
+       height: 1.5rem;
+       width: 1.5rem;
    }
 
     nav h1 {
@@ -95,22 +109,34 @@ nav li a {
         height: 3rem;
         width:3rem;
     }
+
+    main {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    nav li a {
+        display: none;
+   }
+
+   .menu {
+    display: inline;
+    margin: 5px;
+    height: 3rem;
+    width: 3rem;
+    }
 }
   
-nav a:hover {
-    background: #ddd;
-    color: black;
-  }
 
-main {
-    margin-top: 75px;
-}
 
 /* about section styling */
 
 .about.container {
     
     width:100%;
+    min-width: 350px;
     height: 500px;
     background-image: url("/Resources/casey-horner-4rDCa5hBlCs-unsplash.jpg");
     background-repeat: no-repeat;
@@ -140,17 +166,34 @@ main {
 /* services section styling */
 
 .services {
+    border: black solid 1px;
+    width: 100%;
+    min-width: 350px;
+    height: auto;
     display: flex;
-    justify-content: space-around;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+.services h2 {
+    border: black solid 1px;
+    width: 100%;
+    text-align: center;
 }
 
 .service {
+    border: black solid 1px;
     display:inline flex;
+    flex-flow: column nowrap;
     justify-content: center;
-    width: 250px;
-    height: 250px;
+    text-align: center;
+    width: 350px;
+    height: 350px;
 }
 
 .service img {
     width: 75%;
+    height: 75%;
+    align-self: center;
 }
