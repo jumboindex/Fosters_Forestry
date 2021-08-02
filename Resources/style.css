@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: green;
+    background-color: green
     
 }
 
@@ -15,7 +15,7 @@ h1, h2 {
     color: whitesmoke;
 }
 
-h4 {
+h4, h5, label {
     font-family: 'Inter', sans-serif;
     color: whitesmoke;
 }
@@ -33,7 +33,6 @@ p, a {
     min-width: 350px;
     display: flex;
 }
-
 
 /* Navbar styling */
 
@@ -147,9 +146,10 @@ main {
 
 .about {
     height: 500px;
-    background-image: url("/Resources/casey-horner-4rDCa5hBlCs-unsplash.jpg");
-    background-repeat: no-repeat;
+    background-image: url("/Resources/background_sticky.jpg");
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
     flex-flow: column nowrap;
@@ -180,7 +180,8 @@ main {
     height: auto;
     align-content: center;
     justify-content: space-evenly;
-    flex-flow: row wrap;
+    flex-flow: row wrap;  
+
 }
 
 .services h2 {
@@ -194,6 +195,7 @@ main {
     display:inline flex;
     flex-flow: column nowrap;
     justify-content: center;
+    align-items: center;
     text-align: center;
     width: 350px;
     height: 350px;
@@ -207,7 +209,11 @@ main {
 }
 
 .service h4 {
+    width: 50%;
     margin: 0.75rem;
+    background-color: #333;
+    padding: 0.5rem;
+
 }
 
 /* portfolio section styling */
@@ -217,8 +223,12 @@ main {
     align-content: center;
     justify-content: space-evenly;
     flex-flow: row wrap;
-    background-color: #333;
-
+    background-image: url("/Resources/background_sticky.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .portfolio h2 {
@@ -232,6 +242,7 @@ main {
     display:inline flex;
     flex-flow: column nowrap;
     justify-content: center;
+    align-items: center;
     text-align: center;
     width: 350px;
     height: 350px;
@@ -244,7 +255,10 @@ main {
 }
 
 .gallery h4 {
+    width: 75%;
     margin: 0.75rem;
+    background-color: #333;
+    padding: 0.5rem;
 }
 
 /* team section styling */
@@ -283,4 +297,61 @@ main {
 
 .team_member p {
     margin: 0.75rem;
+    background-color: #333;
+    padding: 0.5rem;
+}
+
+/* contact section styling */
+
+.contact {
+    background-image: url("/Resources/background_sticky.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.contact h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0.75rem;
+    
+}
+
+.contact .contact_details {
+    font-size: 2rem;
+    background-color: #333;
+    padding: 15px;
+}
+
+.contact .form_div {
+    margin: 1rem;
+    background-color: #333;
+    margin-bottom: 2rem;
+}
+
+.contact .form_div form {
+    display: inline-flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+/*footer styling */
+
+footer {
+    background-color: #333;
+    border: gray solid 2px;
+    overflow: hidden;   
+}
+
+footer p {
+    padding: 15px;
 }
