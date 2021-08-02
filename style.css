@@ -12,15 +12,28 @@ body {
 
 h1, h2 {
     font-family: 'Cabin', sans-serif;
+    color: whitesmoke;
 }
 
 h4 {
     font-family: 'Inter', sans-serif;
+    color: whitesmoke;
 }
 
-p {
+p, a {
     font-family: 'Maitree', serif;
+    color: whitesmoke;
 }
+
+
+/* containers global styling*/
+
+.container {
+    width:100%;
+    min-width: 350px;
+    display: flex;
+}
+
 
 /* Navbar styling */
 
@@ -40,7 +53,7 @@ nav {
 
 }
 
-nav img {
+nav img.logo {
     float: left;
     height: 5rem;
     width: 5rem ;
@@ -69,10 +82,9 @@ nav ul li {
 }
 
 nav li a {
-    text-align: center;
+     text-align: center;
      text-decoration: none;
      padding: 14px 16px;
-     color: whitesmoke;
 }
 
 nav a:hover {
@@ -94,18 +106,18 @@ main {
         display: none;
    }
 
-   .menu {
+   img.menu {
        display: inline;
        margin: 5px;
-       height: 1.5rem;
-       width: 1.5rem;
+       height: 1rem;
+       width: 1rem;
    }
 
     nav h1 {
         font-size: 1.5rem;
     }  
     
-    nav img {
+    nav img.logo {
         height: 3rem;
         width:3rem;
     }
@@ -121,7 +133,7 @@ main {
         display: none;
    }
 
-   .menu {
+   img.menu {
     display: inline;
     margin: 5px;
     height: 3rem;
@@ -133,16 +145,13 @@ main {
 
 /* about section styling */
 
-.about.container {
-    
-    width:100%;
-    min-width: 350px;
+.about {
     height: 500px;
     background-image: url("/Resources/casey-horner-4rDCa5hBlCs-unsplash.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
+    overflow: hidden;
     flex-flow: column nowrap;
     text-align: center;
     align-items: center;
@@ -150,11 +159,10 @@ main {
 }
 
 .about h2, .about p {
-    color: whitesmoke;
     margin: 10px;
     background-color: #333;
     width: 50%;
-    padding: 5px;
+    padding: 15px;
     flex-shrink: 2;
     
 }
@@ -163,27 +171,26 @@ main {
     font-size: 2.5rem;
 }
 
+
+
 /* services section styling */
 
 .services {
-    border: black solid 1px;
-    width: 100%;
-    min-width: 350px;
+    
     height: auto;
-    display: flex;
     align-content: center;
     justify-content: space-evenly;
     flex-flow: row wrap;
 }
 
 .services h2 {
-    border: black solid 1px;
     width: 100%;
     text-align: center;
+    font-size: 2rem;
+    margin: 0.75rem;
 }
 
 .service {
-    border: black solid 1px;
     display:inline flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -196,4 +203,84 @@ main {
     width: 75%;
     height: 75%;
     align-self: center;
+    border-radius: 100%;
+}
+
+.service h4 {
+    margin: 0.75rem;
+}
+
+/* portfolio section styling */
+
+.portfolio {
+    height: auto;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    background-color: #333;
+
+}
+
+.portfolio h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0.75rem;
+}
+
+.gallery {
+    display:inline flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+    width: 350px;
+    height: 350px;
+}
+
+.gallery img {
+    width: 75%;
+    height: 75%;
+    align-self: center;
+}
+
+.gallery h4 {
+    margin: 0.75rem;
+}
+
+/* team section styling */
+
+.team {
+    height: auto;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+
+}
+
+.team h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0.75rem;
+
+}
+
+.team_member {
+    display:inline flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+    width: 350px;
+    height: 350px;
+}
+
+.team_member img {
+    width: 75%;
+    height: 75%;
+    align-self: center;
+    border-radius: 75%;
+}
+
+.team_member p {
+    margin: 0.75rem;
 }
