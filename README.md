@@ -9,9 +9,9 @@
  
 ## General info
  
-This is a company website for my freind who is a tree surgeon, and was created to practise using flexbox. I have got a bit carried away, and set up a Flask server so I can grab the form data and email it to myself / sales@ if in production. 
+This is a company website for my freind who is a tree surgeon, and created to practise using flexbox / responsive design. I have got a bit carried away, and set up a Flask server so I can grab the form data and email it to myself / sales@fostersforestry.co.uk if in production. At this stage I don't plan to purchase the domain name or set up a mail server / use forwarding. 
 
-Orginally the form emailed any data sumbited to my gmail, however I have commented out the SMTPlib email section due to security concerns (passwords), and flask breaks when SMTPlib throws an error.
+Orginally the form emailed any data sumbited to my gmail, however Flask throws an error when SMTPlib is unable to login to the mail server, so this sections was commented out and obviously i'm not going to upload passwords.
  
 ## Technologies
 * HTML
