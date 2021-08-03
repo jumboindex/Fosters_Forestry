@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <title>Fosters Forestry</title>
-        <link rel='stylesheet' href='/reset.css' type='text/css'>
-        <link rel='stylesheet' href='/style.css' type='text/css'>
+        <link rel='stylesheet' href="{{url_for ('static', filename = 'reset.css') }}" type='text/css'>
+        <link rel='stylesheet' href="{{ url_for ('static', filename = 'style.css') }}" type='text/css'> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Inter&family=Maitree&display=swap" rel="stylesheet"> 
@@ -13,7 +13,7 @@
         <!-- Navbar -->
         <header>
             <nav>
-                <img class="logo" src="Resources/tree logo.jpg">
+                <img class="logo" src="{{ url_for ('static', filename = 'tree logo.jpg') }}">
                 <h1> Fosters Forestry </h1>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -23,7 +23,7 @@
                     <li><a href="#contact">Contact us</a></li>
 
                 </ul>
-                <img class="menu" src="Resources/Hamburger_icon.svg.png">
+                <img class="menu" src="{{ url_for ('static', filename = 'Hamburger_icon.svg.png') }}">
             </nav>
         </header>
 
@@ -42,27 +42,27 @@
         <div class="services container">
             <h2 id="services">Services</h2>
             <div class="service">
-                <img src="Resources/Lime-after.jpg">
+                <img src="{{ url_for ('static', filename = 'Lime-after.jpg') }}">
                 <h4>Tree Services</h4>
             </div>
             <div class="service">
-                <img src="Resources/site clearance.jpg">
+                <img src="{{ url_for ('static', filename = 'site clearance.jpg') }}">
                 <h4>Site Clearance</h4>
             </div>
             <div class="service">
-                <img src="Resources/Logs.jpg">
+                <img src="{{ url_for ('static', filename = 'Logs.jpg') }}">
                 <h4>Logs</h4>
             </div>
             <div class="service">
-                <img src="Resources/woodchip.jpg">
+                <img src="{{ url_for ('static', filename = 'woodchip.jpg') }}">
                 <h4>Woodchip</h4>
             </div>
             <div class="service">
-                <img src="Resources/garden maintenance.jpg">
+                <img src="{{ url_for ('static', filename = 'garden maintenance.jpg') }}">
                 <h4>Garden Maintenance</h4>
             </div>
             <div class="service">
-                <img src="Resources/tree preservation.jpg">
+                <img src="{{ url_for ('static', filename = 'tree preservation.jpg') }}">
                 <h4>Tree Preservation Orders</h4>
             </div>
         </div>
@@ -70,19 +70,19 @@
         <div class="portfolio container">
             <h2 id="portfolio">Portfolio</h2>
             <div class="gallery">
-                <img src="Resources/reduction before.jpg">
+                <img src="{{ url_for ('static', filename = 'reduction before.jpg') }}">
                 <h4>Eucalyptus Reduction - before </h4>
             </div>
             <div class="gallery">
-                <img src="Resources/reduction after.jpg">
+                <img src="{{ url_for ('static', filename = 'reduction after.jpg') }}">
                 <h4>Eucalyptus Reduction - after</h4>
             </div>
             <div class="gallery">
-                <img src="Resources/overgrown garden before.jpg">
+                <img src="{{ url_for ('static', filename = 'overgrown garden before.jpg') }}">
                 <h4>Overgrown Garden - before</h4>
             </div>
             <div class="gallery">
-                <img src="Resources/overgrown garden after.jpg">
+                <img src="{{ url_for ('static', filename = 'overgrown garden after.jpg') }}">
                 <h4>Overgrown Garden - after</h4>
             </div>
         </div>
@@ -90,11 +90,11 @@
         <div class="team container" >
             <h2 id="team"> Meet the team</h2>
             <div class="team_member">
-                <img src="Resources/tree surgeon.jpeg">
+                <img src="{{ url_for ('static', filename = 'tree surgeon.jpeg') }}">
                 <p> Jack Foster - Cheif Arborist (the brawn)</p>
             </div>
             <div class="team_member">
-                <img src="Resources/Jim.jpeg">
+                <img src="{{ url_for ('static', filename = 'Jim.jpeg') }}">
                 <p> Jim - head of conectivity, infrasructure and data centres (the brains)</p>
             </div>    
         </div>
@@ -109,7 +109,7 @@
                 <h5>Email: sales@fostersforestry.co.uk</h5>
             </div>
             <div class="form_div">
-                <form method="POST" action="/index.html">
+                <form method="POST" action="/submit">
                     <label for="name">Name:</label>
                     <input type="text" name="name" id="name" required>
                     <br>
