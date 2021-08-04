@@ -18,6 +18,7 @@ Orginally the form emailed any data sumbited to my gmail, however Flask throws a
 
 * HTML
 * CSS
+* Javascript
 * Python 3
 
 ## Setup
