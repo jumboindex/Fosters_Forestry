@@ -29,7 +29,6 @@ pip install flask
 
 ## To-do list
 
-* create hamburger menu using JS.
 * find a better way to store credentials to use SMTPlib.
 
 ## Status
